@@ -7,8 +7,8 @@ interface RemotePageState {
   userEmail: string;
 }
 
-export default class RemotePage extends Component<{}, RemotePageState> {
-  constructor(props: {}) {
+export default class RemotePage extends Component<Record<string, never>, RemotePageState> {
+  constructor(props: Record<string, never>) {
     super(props);
     this.state = {
       userEmail: ''
